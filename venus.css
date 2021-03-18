@@ -1,0 +1,194 @@
+#venus{
+    position: fixed;
+    margin-top: -10px;
+    margin-left: -8px;
+    height: 101%;
+    width: 100%;
+    z-index: -1;
+}
+#open{
+    position: fixed;
+    margin-top: -30px;
+    margin-left: -10px;
+    z-index: 10;
+    animation-name: up;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+}
+#name{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 260px;
+    font-size: 200px;
+    color: white;
+    font-style: italic;
+}
+#artist{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 630px;
+    font-size: 100px;
+    color: white;
+}
+
+#x{
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 1690px;
+    height: 10%;
+    width: 4%;
+    z-index: 9;
+    transition: transform .2s;
+}
+#x:hover{
+    transform: scale(1.15);
+}
+
+
+/* KEYFRAMES */
+@keyframes up{
+    from{
+        margin-top: -30px;
+        margin-left: -10px;
+    }
+    to{
+        margin-top: -1500px;
+        margin-left: -10px;
+        
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.75;
+        
+    }
+}
+
+
+/* VENUS */
+#venusGirl{
+    position: fixed;
+    margin-top: 37px;
+    margin-left: 727px;
+    height: 86%;
+    width: 22.5%;
+    z-index: 1;
+    transition: transform .2s;
+}
+#venusGirl:hover{
+    transform: scale(1.03);
+}
+#venusWords{
+    position: fixed;
+    margin-top: 700px;
+    margin-left: 350px;
+    height: 10%;
+    z-index: 0;
+}
+.venusWords{
+    opacity: 0;
+}
+.venusGirl:hover ~ .venusWords {
+    animation-name: appear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+/* BOYGIRL */
+#boyGirl{
+    position: absolute;
+    margin-top: -14px;
+    margin-left: 418px;
+    height: 23%;
+    width: 15%;
+    z-index: 1;
+    transition: transform .2s;
+}
+#boyGirl:hover{
+    transform: scale(1.1);
+}
+
+#boyGirlWords{
+    position: fixed;
+    margin-top: 230px;
+    margin-left: 250px;
+    height: 13%;
+    width: 17%;
+    z-index: 0;
+}
+.boyGirlWords{
+    opacity: 0;
+}
+.boyGirl:hover ~ .boyGirlWords {
+    animation-name: appear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+/* GIRL */
+#girl{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 1070px;
+    height: 38%;
+    width: 33%;
+    z-index: 2;
+    transition: transform .2s;
+}
+#girl:hover{
+    transform: scale(1.07);
+}
+
+#girlWords{
+    position: fixed;
+    margin-top: 530px;
+    margin-left: 1400px;
+    height: 17%;
+    width: 17%;
+    z-index: 0;
+}
+.girlWords{
+    opacity: 0;
+}
+.girl:hover ~ .girlWords {
+    animation-name: appear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+
+#info{
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 5%;
+    width: 5%;
+    z-index: 5;
+    transition: transform .2s;
+    opacity: 0.5;
+}
+#infoVenus{
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30%;
+    z-index: 20;
+}
+.infoVenus{
+    opacity: 0;
+}
+.info:hover ~ .infoVenus {
+    animation-name: appear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
